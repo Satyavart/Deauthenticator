@@ -50,6 +50,7 @@ def start(target_ip, gateway_ip):
             time.sleep(0.8)
     except KeyboardInterrupt:
         print("\n[+] Exiting and Resetting ARP Table.....")
+        subprocess.call("echo 1 > /proc/sys/net/ipv4/ip_forward", shell=True)
         restore(target_ip, gateway_ip)
         restore(gateway_ip, target_ip)
 
