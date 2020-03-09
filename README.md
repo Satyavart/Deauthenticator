@@ -9,4 +9,6 @@ Deauthenticator
                         IP address of Target computer
         -d SPOOF, -r SPOOF, -s SPOOF, --spoof SPOOF
                         IP address of Router/Gateway
-   eg. python deauthenticator.py -t 192.168.137.54 -d 192.168.137.1
+   eg.
+              
+                python deauthenticator.py -t 192.168.137.54 -d 192.168.137.1
